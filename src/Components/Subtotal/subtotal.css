@@ -1,0 +1,29 @@
+.Subtotal{
+    margin-top: 5px;
+  /* border:  2px solid black; */
+ display:  flex;
+ flex-direction: column;
+
+ justify-content: center;
+  width:  300px;
+  background-color:  #f3f3f3 ;
+  border: 1px solid #dddd;
+  border-radius: 3px;
+  padding: 14px;
+  /* height: 200px; */
+  /* padding: 20px; */
+}
+
+.Subtotal >* { 
+margin: 0.5em;
+align-self: flex-start;
+} 
+
+.Subtotal >button{
+     background-color: rgb(255, 208, 0);
+     border: 0.4px solid #707070dd ;
+     padding: 4px 10px;  
+     cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+}

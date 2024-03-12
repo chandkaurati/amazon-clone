@@ -1,6 +1,35 @@
 import React from 'react'
 import './Product.css'
-function Product({title, image, price , rating }) {
+import { CartContext } from '../../StateProvider/cartprovider'
+import { useContext } from 'react'
+
+function Product({id,title, image, price , rating }) {
+const {cartItems, setCartItems, addToCart} = useContext(CartContext)
+        
+  function handleclick(e){
+             // Check if the item already exists in cart
+            //  const existingItem = cartItems.find(item => item.id === id);
+
+            //  if (existingItem) {
+            //      // If item already exists, update its quantity
+            //      const updatedCartItems = cartItems.map(item =>
+            //          item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+            //      );
+            //      setCartItems(updatedCartItems);
+            //  }
+                 // If item doesn't exist, add it to cart
+                 addToCart({
+                     id: id,
+                     title: title,
+                     image: image,
+                     price: price,
+                     rating: rating,
+                     quantity: 1 // Add quantity property for tracking
+                 });
+             
+     
+  
+  }
   return (
     <div className='Product'>
        <div className="product__info">
@@ -17,9 +46,8 @@ function Product({title, image, price , rating }) {
         </div>
        </div>
        <img src={image} alt="" />
-       <button>Add to Basket</button>
+       <button onClick={handleclick}>Add to Basket</button>
     </div>
   )
 }
-
 export default Product

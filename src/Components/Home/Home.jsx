@@ -32,7 +32,7 @@ function Home() {
 
      <div className="home__row">
      <Product
-    //  id  = "1535235"
+     id  = "1535235"
      rating={3}
      price={320.53}
      title="Redmi 108 cm (43 inches) 4K Ultra HD Android Smart LED TV X43 | L43R7-7AIN (Black)"
