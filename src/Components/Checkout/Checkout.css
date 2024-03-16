@@ -6,6 +6,16 @@
     justify-content: space-between;
 }
 
+@media (max-width:700px) {
+    .checkout{
+         display:  flex;
+         flex-direction: column;
+    }
+    .checkout__subtoatal{
+        align-self: center;
+    }
+}
+
 
 .checkout__title{
    margin-right: 10px;

@@ -10,7 +10,7 @@ function Header() {
   const {cartItems} = useContext(CartContext)
   const [numberofitems, setnumberofitems] = useState(0)
     useEffect(()=>{
-    setnumberofitems(cartItems?.length)
+    setnumberofitems(cartItems.length)
     },[cartItems])
 
   return (
@@ -32,7 +32,11 @@ function Header() {
 
         <div className="header__option">
           <span className="header__optionLineOne">hello guest</span>
-          <span className="header__optionLineTwo">Sign in</span>
+         <Link  to='/login'>
+         <span className="header__optionLineTwo">
+           sign in
+          </span>
+         </Link>
         </div>
         <div className="header__option">
           <span className="header__optionLineOne">retunrs</span>

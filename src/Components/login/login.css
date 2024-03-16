@@ -1,0 +1,85 @@
+
+.login{
+    height: 90vh;
+    background-color: white;
+     display: flex ;
+     flex-direction: column;
+     align-items: center;
+
+}
+.login_logo{
+   /* margin-top: 20px; */
+   /* margin-bottom: 20px; */
+   object-fit: contain;
+   width: 100px;
+   margin-right: auto;
+   margin-left: auto;
+   /* border:  2px solid black; */
+}
+
+.login_container{
+    border: 1px solid lightgray;
+     display:  flex;
+     align-items: center;
+     flex-direction: column;
+     width: 300px;
+     height: fit-content;
+     border-radius: 5px;
+     padding: 20px;
+}
+
+.login_container > form{
+    /* padding: 1em; */
+    display:  flex;
+    /* border: 2px solid black; */
+    width: 100%;
+    flex-direction: column;
+}
+.login_container > form >label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.login_container > form > input{
+     height: 30px;
+     outline: none;
+     border: 0.8px solid  lightgray;
+     padding: 3px 8px;
+     border-radius: 4px;
+     margin-bottom: 10px;
+     background-color: white;
+     width: 98%;
+}
+
+.login_container  > form > p { 
+    text-align: center;
+    padding: 0.4rem;
+} 
+
+.signin_button{ 
+   /* width: 100px;  */
+   align-self: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 98%;
+  background-color: rgb(255, 208, 0);
+  border: 0.4px solid #707070dd ;
+  padding: 4px 10px;  
+  cursor: pointer;
+ border-radius: 3px ;
+
+}
+
+
+.register_button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 208, 0);
+  border: 0.4px solid #707070dd ;
+  padding: 4px 10px;  
+  cursor: pointer;
+ border-radius: 3px ;
+
+
+}

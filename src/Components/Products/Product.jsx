@@ -8,8 +8,10 @@ const {cartItems, setCartItems, addToCart} = useContext(CartContext)
         
   function handleclick(e){
              // Check if the item already exists in cart
-            //  const existingItem = cartItems.find(item => item.id === id);
-
+            //  const existingItem = cartItems.find((item)=>{
+            //       item.id == id
+            //  });
+            //  console.log(existingItem)
             //  if (existingItem) {
             //      // If item already exists, update its quantity
             //      const updatedCartItems = cartItems.map(item =>
